@@ -1,0 +1,38 @@
+/* general style */
+.buttons-check {
+  padding: 2rem 0 0 0;
+}
+
+.buttons-check label {
+  line-height: 1rem;
+  vertical-align: middle;
+}
+
+/*
+hide generic checkbox that belongs to
+the div with the class-name "custom"
+*/
+.buttons-check [type="checkbox"] {
+  display: none;
+}
+
+/* create container to take role of checkbox */
+.buttons-check label::before {
+  content: "";
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  margin: 0 10px 0 0;
+  font-size: 1.5rem;
+  border: 4px solid coral;
+  border-radius: 3px;
+  vertical-align: middle;
+}
+
+/* add checkmark once the label is clicked */
+.buttons-check [type="checkbox"]:checked + label::before {
+  text-align: center;
+  content: "\2714";
+  background-color: coral;
+  color: white;
+}

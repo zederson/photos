@@ -1,0 +1,9 @@
+<div id="home_app">
+  <%= render 'home/components/welcome' %>
+
+  <%= render 'home/components/carousel' %>
+</div>
+
+<%= content_for :included_scripts do %>
+  <%= javascript_pack_tag 'home' %>
+<% end %>

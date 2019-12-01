@@ -1,0 +1,35 @@
+<section id="filter" class="text-center bg-light">
+  <div class="container">
+    <div class="row">
+
+      <div class="col-lg-2 text-left">
+        <div class="buttons-check">
+          <input type="checkbox" id="party" value="beer-yes" v-model="criteria.location.party">
+          <label for="party">Festa</label>
+        </div>
+      </div>
+
+      <div class="col-lg-2 text-left">
+        <div class="buttons-check">
+          <input type="checkbox" id="church" value="beer-yes" v-model="criteria.location.church">
+          <label for="church">Igreja</label>
+        </div>
+      </div>
+
+      <div class="col-lg-2 text-left">
+        <div class="buttons-check">
+          <input type="checkbox" id="box" value="beer-yes" v-model="criteria.location.box">
+          <label for="box">Cabina</label>
+        </div>
+      </div>
+
+      <div class="col-lg-2 text-left">
+        {{ names }}
+      </div>
+      <div class="col-lg-2 text-left">
+        {{ criteria }}
+      </div>
+
+    </div>
+  </div>
+</section>
